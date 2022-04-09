@@ -1,0 +1,114 @@
+<!doctuype html>
+<html>
+<head>
+  <title> My Resume </title>
+  <link rel="stylesheet" href="mystylesheet.css"
+</head>
+
+<body>
+
+<h1> Allen Thanh Nguyen </h1><br>
+<img src='selfie.jpg' alt="Selfie of me" width="180" height ="380">
+<br>
+<button class="accordion"> <h2> Information</h2> </button>
+<div class="panel">
+<a href='https://www.google.com/maps?q=5534+n+46th+ln+glendale+az&rlz=1C1CHZO_enUS961US961&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjOr9HL3Or2AhXODkQIHWfoA1EQ_AUoAXoECAEQAw' target="_blank"><address> Address: 5534 N 46th Ln, Glendale, AZ 85301 </address></a>
+<a href=''><phone> Phone: (623) 243-0927 <br></phone></a>
+<a href='mailto:atnguy43@asu.edu'><email>Email: atnguy43@asu.edu <br><br><br></email></a>
+</div>
+
+<button class="accordion"> <h2>Objective </h2></button>
+<div class="panel">
+<p> Get a software engineering job. With the experience from software engineering, I hope to some day transition into game developing, as I am an avid gamer :) . </p>
+</div>
+
+<button class="accordion"> <h2> Education </h2> </button>
+<div class="panel">
+	<table>
+		<thead>
+			<tr>
+				<th>Degree/Diploma</th>
+				<th>School</th>
+				<th>Year</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>  High School diploma</td>
+				<td>  North Pointe Preparatory</td>
+				<td>  Spring 2019</td>
+			</tr>
+			<tr>
+				<td>  College Education</td>
+				<td>  Arizona State University</td>
+				<td>  Fall 2019-Ongoing</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<button class="accordion"> <h2> Experience </h2> </button>
+
+<div class="panel">
+<ol>
+<li>
+<strong> Java: </strong> 
+Able to work in Java with an adequate understanding of object-oriented programming.
+</li>
+<li>
+
+<strong> C/C++: </strong> 
+An understanding of procedural programming.
+
+</li>
+<li>
+
+<strong> Data Structures and Algorithms: </strong> 
+Able to implement strong data structures and understand the time complexities of algorithms. Some examples are Binary Trees, Heaps, and Hash Tables.
+
+</li>
+<li>
+
+<strong>Front End: </strong> 
+Basic understanding of html. In process of improving web programming with practice.
+
+</li>
+<li>
+
+<strong> Development Tools: </strong> 
+Eclipse, VScode, IntelliJ, GitHub, Vim.
+
+</li>
+</ol>
+
+</div>
+
+<button class="accordion"> <h2> References </h2> </button>
+<div class="panel">
+<ul>
+  <li><a href='https://www.linkedin.com/in/nttran8/' target='_blank'> Nghi Tran, Software Engineer </a></li>
+</ul>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i=0; i < acc.length; i++) {
+
+	acc[i].addEventListener("click", function() {
+    	this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        	panel.style.display = "none";
+        } else {
+        	panel.style.display = "block";
+	}
+    });
+}
+</script>
+
+
+</body>
+</html>
